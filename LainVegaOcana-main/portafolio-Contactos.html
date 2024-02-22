@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Laín Vega Ocaña</title>
+    <link rel="stylesheet" href="CSS/styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+  </style>
+  </head>
+  <body style="background-image: url('IMAGENES/fotoFondo.jpg'); background-size: cover; background-position: center;">
+
+      
+<body class="Datos">
+    <div>
+        <h1>Datos de Contacto</h1>
+    </div>
+    <br>
+    <nav>
+        <button id="telefono">Teléfono</button><br>
+        <button id="email">Email</button><br>
+        <button id="linkedin">LinkedIn</button>
+    </nav>
+
+    <footer>
+        <p>Derechos reservados © 2024</p>
+    </footer>
+
+    <script>
+        // Evento para descargar el vCard
+        document.getElementById('telefono').addEventListener('click', function () {
+            var a = document.createElement('a');
+            a.href = 'DATOS/lainVegaContacto.vcf';
+            a.download = 'DATOS/lainVegaContacto.vcf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+
+        // Evento para abrir la aplicación de correo
+        document.getElementById('email').addEventListener('click', function () {
+            window.location.href = 'mailto:lainvega115@gmail.com';
+        });
+
+        // Evento para ir al perfil de LinkedIn
+        document.getElementById('linkedin').addEventListener('click', function () {
+            window.location.href = 'https://www.linkedin.com/in/lain-vega-ocaña-954a84172/';
+        });
+    </script>
+</body>

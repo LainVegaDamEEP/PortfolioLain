@@ -1,0 +1,197 @@
+body {
+    background: black; 
+    align-items: center;
+}
+.content {
+    margin: auto; 
+    width: 750px; 
+    height: 300px; 
+    display: flex; 
+    padding: 10%;
+}
+
+
+.del {
+    background: #e50914; 
+}
+
+/* Letra L - Mantenida igual */
+.L-del1 {
+    width: 60px; 
+    height: 290px; 
+    margin: 0 0 10px 30px; 
+    animation: L-del1 3s linear; 
+}
+.L-del2 {
+    width: 150px; 
+    height: 54px; 
+    margin: 240px 0 0 -60px; 
+    animation: L-del2 3s linear; 
+    z-index: 2; 
+}
+
+/* Letra A - Similar a la original */
+.A-del1 {
+    width: 60px; 
+    height: 300px; 
+    margin: 0 -20px 0 40px; 
+    transform: skewX(-5deg);
+    animation: A-del1 3s linear; 
+   
+}
+.A-del2 {
+    width: 40px; 
+    height: 60px; 
+    margin: 170px 12px 0 10px; 
+    transform: skewY(-3deg);
+    animation: A-del2 3s linear;
+}
+.A-del3 {
+    width: 60px; 
+    height: 295px; 
+    margin: 0 0 0 -20px; 
+    transform: skewX(5deg);
+    animation: A-del3 3s linear;
+}
+
+/* Letra Í - Nuevas clases */
+.I-del1 {
+    width: 60px; 
+    height: 300px; 
+    margin: 0 20px 0 50px; 
+    animation: I-del1 2s linear; 
+}
+
+
+.N-del1 {
+    width: 60px; 
+    height: 300px; 
+    margin: 0 43px 0 20px; 
+    animation: N-del1 2s linear; 
+}
+
+.N-del2 {
+    width: 60px; 
+    height: 300px; 
+    transform: skewX(18deg); /* Asegúrate de que el ángulo y la dirección de la inclinación sean correctos */
+    margin: 0 -15px 0 -30px; /* Ajusta este margen si es necesario */
+    animation: N-del2 2s linear; 
+}
+
+.N-del3 {
+    width: 60px; 
+    height: 300px; 
+    margin: 0 0 0 26px; /* Ajusta este margen para alinear correctamente con las otras partes de la N */
+    animation: N-del3 2s linear; 
+}
+
+
+/* Animaciones para L - Sin cambios */
+@keyframes L-del1 {
+    0% {
+        height: 0; 
+    }
+    5% {
+        height: 0; 
+    }
+    30% {
+        height: 290px; 
+    }
+}
+@keyframes L-del2 {
+    5% {
+        width: 0; 
+    }
+    15% {
+        width: 0; 
+    }
+    35% {
+        width: 150px; 
+    }
+}
+
+
+/* Animaciones para A - Sin cambios */
+@keyframes A-del1 {
+    15% {
+        height: 0; 
+        margin-top: 300px; 
+        box-shadow: 0; 
+    }
+    35% {
+        height: 300px; 
+        margin-top: 0; 
+    }
+}
+@keyframes A-del2 {
+    0% {
+        width: 0; 
+    }
+    10% {
+        width: 0; 
+    }
+    35% {
+        width: 40px; 
+    }
+}
+@keyframes A-del3 {
+    0% {
+        height: 0; 
+    }
+    25% {
+        height: 0; 
+    }
+    40% {
+        height: 295px; 
+    }
+}
+/* Animaciones para Í - Nuevas animaciones */
+@keyframes I-del1 {
+    0% {
+        height: 0; 
+    }
+    20% {
+        height: 0; 
+        margin-top: 300px; 
+    }
+    50% {
+        margin-top: 0; 
+        height: 300px;  
+    }
+}
+
+
+/* Animaciones para N - Nuevas animaciones */
+@keyframes N-del1 {
+    0% {
+         height: 0;
+     }
+    40% {
+        height: 0; 
+    }
+    55% {
+         height: 300px;
+     }
+}
+@keyframes N-del2 {
+    0% {
+         height: 0;
+     }
+    50% {
+        height: 0; 
+    }
+    65% { 
+        height: 300px; 
+    }
+}
+@keyframes N-del3 {
+    0% {
+         height: 0;
+     }
+    60% {
+        height: 0; 
+    }
+    80% { 
+        height: 300px;
+     }
+}

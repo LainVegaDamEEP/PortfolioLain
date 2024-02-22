@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sytles.css">
+    <link rel="stylesheet" href="CSS/styles-barrido.css">
+    <title>Laín</title>
+    <style>
+        body {
+            transition: opacity 1s ease-out;
+        }
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        
+        <!-- Letra L -->
+        <div class="L-del1 del"></div>
+        <div class="L-del2 del"></div>
+        
+        <!-- Letra A -->
+        <div class="A-del1 del"></div>
+        <div class="A-del2 del"></div>
+        <div class="A-del3 del"></div>
+
+        <!-- Letra Í -->
+        <div class="I-del1 del"></div>
+
+        <!-- Letra N -->
+        <div class="N-del1 del"></div>
+        <div class="N-del2 del"></div>
+        <div class="N-del3 del"></div>
+        <div class="N-del4 del"></div>
+        
+
+        </div>
+      </netflixintro>
+    </div>
+    </div>
+    <script>
+        function redirectToMainPage() {
+            document.body.classList.add('hidden');
+            setTimeout(function(){
+                window.location.href = 'portafolio-Barrido.html';
+            }, 500); // Espera 1 segundo para coincidir con la duración de la animación
+        }
+    
+        // Redirige después de un tiempo determinado o puedes llamar a redirectToMainPage() en un evento, como un clic de botón.
+        setTimeout(redirectToMainPage, 2000); // 5 segundos para el ejemplo
+    </script>
+</body>
+</html>
